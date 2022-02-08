@@ -1,0 +1,22 @@
+{{#link-to "books.detail" idBooks}}
+  <div class="card-header">
+    <h5 class="card-title">{{books}}</h5>
+  </div>
+  <div class="list-group-item">
+    <p><strong>Автор</strong>: {{author}}</p>
+    <p><strong>Страниц</strong>: {{page}}</p>
+    <p><strong>Тэги</strong>: {{tags}}</p>
+  </div>
+  <div class="list-group-item">
+      <div class="row">
+        <div class="col-md-auto">
+          Рейтинг:
+        </div>
+        <div class="col">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
+        </div>
+      </div>
+  </div>
+{{/link-to}}
