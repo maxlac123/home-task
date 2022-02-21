@@ -10,11 +10,13 @@ Router.map(function() {
   this.route('books', { path: '/books' }, function() {
     this.route('detail', { path: '/:id' });
   });
-  this.route('speakers');
   this.route('error', { path: '/:error'});
   this.route('404', { path: '*path'});
   this.route('books-create');
   this.route('edit-books', { path: '/:id/edit-books' });
+  this.route('speakers', { path: '/speakers' });
+  this.route('speakers-create');
+  this.route('speakers-edit', { path: '/:id/speakers-edit' });
 });
 
 export default Router;

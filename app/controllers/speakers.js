@@ -2,26 +2,25 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  queryParams: ["search", "tag_like"],
+  queryParams: ["search"],
   search: '',
-  tag_like: '',
   dataService: service('data'),
   actions: {
-    async getBook(e) {
+    async getSpeakers(e) {
       e.preventDefault();
 
-      await this.get('dataService').editBooks({
+      await this.get('dataService').editSpeakers({
         id: this.get('id'),
       });
 
-      this.transitionToRoute('edit-books');
+      this.transitionToRoute('speakers-edit');
 
 
     },
-    async deleteBooks(books) {
+    async deleteSpeakers(speakers) {
       try{
-        await this.get('dataService').deleteBooks(books);
-        this.transitionToRoute('books.index');
+        await this.get('dataService').deleteSpeakers(speakers);
+        this.transitionToRoute('speakers');
       }
       catch(e){
         this.transitionToRoute('error');

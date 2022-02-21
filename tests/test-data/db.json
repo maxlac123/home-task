@@ -3,38 +3,108 @@
     {
       "id": 1,
       "book": "Книга",
-      "author": "Роберfdfgdfg",
-      "page": "123"
+      "author": "Робер",
+      "page": "1233",
+      "tags": [
+        "#tag111",
+        "#tag2",
+        "#tag3"
+      ]
     },
     {
       "book": "Работай",
       "author": "Работавич",
-      "page": "123321",
-      "id": 2
+      "page": "1233211",
+      "id": 2,
+      "tags": [
+        "#tag1",
+        "#tag2",
+        "#tag3"
+      ]
     },
     {
       "book": "Книга Петра",
       "author": "Петров",
       "page": "333",
-      "id": 3
+      "id": 3,
+      "tags": [
+        "#tag1",
+        "#tag2",
+        "#tag3"
+      ]
     },
     {
-      "book": "1",
-      "author": "1",
-      "page": "1",
-      "id": 4
+      "book": "qwer",
+      "author": "qwer",
+      "page": "123321123321",
+      "id": 4,
+      "tags": [
+        "#tag1",
+        "#tag2",
+        "#tag3"
+      ]
     },
     {
-      "book": "2",
-      "author": "2",
-      "page": "2",
-      "id": 5
+      "book": "123",
+      "author": "123",
+      "page": "123",
+      "id": 5,
+      "tags": [
+        "#tag1",
+        "#tag2",
+        "#tag3"
+      ]
+    },
+    {
+      "book": "",
+      "author": "",
+      "page": "",
+      "id": 6,
+      "tags": [
+        "#tag1",
+        "#tag2",
+        "#tag3"
+      ]
     },
     {
       "book": "123321",
-      "page": "123321",
       "author": "123321",
+      "page": "123321",
+      "id": 7,
+      "tags": "123"
+    },
+    {
+      "book": "123321",
+      "author": "123321",
+      "page": "123321",
+      "tags": "321",
+      "id": 8
+    },
+    {
+      "book": "",
+      "author": "",
+      "page": "",
       "id": 9
+    }
+  ],
+  "speakers": [
+    {
+      "id": 1,
+      "name": "Петр",
+      "family": "Петров",
+      "surname": "Петрович"
+    },
+    {
+      "name": "Максим",
+      "family": "Шадрин",
+      "surname": "Андреевич",
+      "id": 2
+    },
+    {
+      "name": "Имя",
+      "family": "Фамилия",
+      "surname": "Отчество",
+      "id": 3
     }
   ]
 }

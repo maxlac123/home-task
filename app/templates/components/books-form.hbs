@@ -8,13 +8,13 @@
 				<div class="form-group row">
 					<label for="inputAuthor" class="col-sm-2 col-form-label text-right">Автор</label>
 					<div class="col-sm-10">
-						{{input type="text" class="form-control form-control-lg" placeholder="Фамилия И.О. автора" value=books.author}}
+						{{input type="text" class="form-control form-control-lg" placeholder="Фамилия И.О. автора" value=author}}
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputPagesCount" class="col-sm-2 col-form-label text-right">Объем</label>
 					<div class="col-sm-10">
-						{{input type="number" class="form-control form-control-lg" placeholder="Количество страниц книги" value=books.page}}
+						{{input type="number" class="form-control form-control-lg" placeholder="Количество страниц книги" value=page}}
 					</div>
 				</div>
 				<div class="form-group row">
@@ -38,7 +38,7 @@
 				<div class="form-group row">
 					<label for="inputTags" class="col-sm-2 col-form-label text-right">Теги</label>
 					<div class="col-sm-10">
-						{{input type="text" class="form-control" placeholder="#Теги через запятую"}}
+						{{input type="text" class="form-control" placeholder="#Теги через запятую" value=tags}}
 						<select multiple="multiple" data-role="tagsinput" style="display: none;" id="inputTags">
 							<option value="суперкнига" selected="selected">суперкнига</option>
 							<option value="программирование" selected="selected">программирование</option>
