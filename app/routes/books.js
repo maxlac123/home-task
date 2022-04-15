@@ -15,40 +15,41 @@ export default Route.extend({
   },
 
   model({ search, tag_like }) {
-    let promise = new Promise((resolve, reject) =>{
-      later(async() => {
-      try {
-        let books = search ? await this.get("dataService").getBooks(search) : await this.get("dataService").getBooks()
-        resolve(books);
-      }
-      catch (e) {
-        reject('error')
-      }
-      }, 1000 );
-    }).
-    then((books) => {
-      this.set('controller.model', books);
-    }).
-    finally(() => {
-      if (promise === this.get('modelPromise')) {
-        this.set('controller.isLoading', false);
-      }
-    });
+    // let promise = new Promise((resolve, reject) =>{
+    //   later(async() => {
+    //   try {
+    //     let books = search ? await this.get("dataService").getBooks(search) : await this.get("dataService").getBooks()
+    //     resolve(books);
+    //   }
+    //   catch (e) {
+    //     reject('error')
+    //   }
+    //   }, 1000 );
+    // }).
+    // then((books) => {
+    //   this.set('controller.model', books);
+    // }).
+    // finally(() => {
+    //   if (promise === this.get('modelPromise')) {
+    //     this.set('controller.isLoading', false);
+    //   }
+    // });
 
-    this.set('modelPromise', promise);
-    return { isLoading: true };
+    // this.set('modelPromise', promise);
+    // return { isLoading: true };
+    let promise = this.get('store').findAll('book');
+    return promise;
   },
 
   setupController(controller, model){
     this._super(...arguments);
-    controller.set('isLoading', true);
+    // controller.set('isLoading', true);
   },
   actions: {
     refreshBooks() {
-      this.refresh;
-    },
-    loading(transition, originRoute) {
-      return false;
+    //   this.refresh;
+     },
+    // loading(transition, originRoute) {
+    //   return false;
     }
-  }
-});
+  });

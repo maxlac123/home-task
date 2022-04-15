@@ -19,13 +19,9 @@ export default Controller.extend({
 
     },
     async deleteBooks(books) {
-      try{
-        await this.get('dataService').deleteBooks(books);
-        this.transitionToRoute('books.index');
-      }
-      catch(e){
-        this.transitionToRoute('error');
-      }
+      await books.destroyRecord();
+
+      this.transitionToRoute('books.index')
     }
   }
 });

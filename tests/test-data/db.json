@@ -3,24 +3,16 @@
     {
       "id": 1,
       "book": "Книга",
-      "author": "Робер",
-      "page": "1233",
-      "tags": [
-        "#tag111",
-        "#tag2",
-        "#tag3"
-      ]
+      "author": "Роберт",
+      "page": 1233,
+      "tags": "#tag111,#tag2,#tag3"
     },
     {
-      "book": "Работай",
+      "book": "Работай1",
       "author": "Работавич",
-      "page": "1233211",
+      "page": 1233211,
       "id": 2,
-      "tags": [
-        "#tag1",
-        "#tag2",
-        "#tag3"
-      ]
+      "tags": "#tag1,#tag2,#tag3"
     },
     {
       "book": "Книга Петра",
@@ -72,19 +64,6 @@
       "page": "123321",
       "id": 7,
       "tags": "123"
-    },
-    {
-      "book": "123321",
-      "author": "123321",
-      "page": "123321",
-      "tags": "321",
-      "id": 8
-    },
-    {
-      "book": "",
-      "author": "",
-      "page": "",
-      "id": 9
     }
   ],
   "speakers": [
@@ -92,19 +71,29 @@
       "id": 1,
       "name": "Петр",
       "family": "Петров",
-      "surname": "Петрович"
+      "surname": "Петрович",
+      "bookId": 1
     },
     {
       "name": "Максим",
       "family": "Шадрин",
       "surname": "Андреевич",
-      "id": 2
+      "id": 2,
+      "bookId": 1
     },
     {
       "name": "Имя",
       "family": "Фамилия",
       "surname": "Отчество",
-      "id": 3
+      "id": 3,
+      "bookId": 2
+    },
+    {
+      "name": "123",
+      "family": "123",
+      "surname": "123",
+      "id": 4,
+      "bookId": 2
     }
   ]
 }
